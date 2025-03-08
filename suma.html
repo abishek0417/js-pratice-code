@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        const product={
+       /* const product={
             name : 'shirt',
             'delivery':'1 day',
             rating:{
@@ -28,6 +28,50 @@
         console.log(convert)
         console.log(JSON.parse(convert));
         console.log(JSON.parse(JSON.stringify(product)));
+        
+        //this will set a default value 5
+        function fun1(a=5){
+            console.log(a)
+        }
+        fun1()*/
+        const a='hello'.length
+        console.log(a)
+
+        const b='hello'.toUpperCase()
+        console.log(b)
+
+        const object1={
+            message:'good morning',
+            price:799
+        }
+        console.log(object1)
+
+       // const message=object1.message
+       // console.log(message)
+
+        const {message,price}=object1
+        console.log(message)
+        console.log(price)
+
+        const object2={
+            name:'abishek',
+            method1:function fun1(){
+                console.log("you are in method 1")
+            }
+        }
+        console.log(object2)
+        object2.method1();
+        
+        //easy call function in this we dont need to mention function fun1 like that
+
+        const object3={
+            name:'abishek',
+            method2(){
+                console.log('you are in method2')
+            }
+        }
+        console.log(object3);
+        object3.method2();
     </script>
 </body>
 </html>
